@@ -100,6 +100,11 @@ class Crud {
         $stmt = $this->conn->prepare("DELETE FROM users WHERE id = ?");
         return $stmt->execute([$id]);
     }
+    public function getUsers() {
+    $q = $this->conn->query("SELECT * FROM users ORDER BY id DESC");
+    return $q->fetchAll(PDO::FETCH_ASSOC);
+}
+
 }
 
 ?>
