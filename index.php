@@ -5,7 +5,6 @@ include 'includes/header.php';
 
 <div class="text-center mb-5">
 
-    <!-- Main header here -->
     <h1 class="fw-bold">Inventory Management System</h1>
 
     <!-- Quick description of the website -->
